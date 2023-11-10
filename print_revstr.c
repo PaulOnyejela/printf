@@ -17,7 +17,7 @@ int print_revstr(va_list args)
 		s = "(null)";
 	while (s[y] != '\0')
 		y++;
-	for (x = j - 1; x >= 0; x--)
+	for (x = y - 1; x >= 0; x--)
 		_putchar(s[x]);
 	return (y);
 }
